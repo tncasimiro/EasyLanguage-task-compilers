@@ -1,6 +1,6 @@
-# 🧩 EasyLanguage: Laboratório de Compiladores
+# 🧩 EasyLanguage
 
-[cite_start]O **EasyLanguage** é um projeto acadêmico que simula a criação completa de uma linguagem de programação própria, servindo como um **mini-compilador/interpretador**[cite: 8]. [cite_start]Ele é um laboratório prático que integra conceitos de **Estruturas de Dados**, **Linguagens Formais e Autômatos** e **Compiladores**[cite: 65, 286].
+O **EasyLanguage** é um projeto acadêmico que simula a criação completa de uma linguagem de programação própria, servindo como um **mini-compilador/interpretador**. Ele é um laboratório prático que integra conceitos de **Estruturas de Dados**, **Linguagens Formais e Autômatos** e **Compiladores**.
 
 ## 📖 Sumário
 * [✨ Visão Geral](#-visão-geral)
@@ -15,23 +15,23 @@
 
 ## ✨ Visão Geral
 
-[cite_start]O objetivo principal do projeto é demonstrar o funcionamento interno de uma linguagem, desde a análise do código-fonte (`.easy`) até a sua execução[cite: 9, 77].
+O objetivo principal do projeto é demonstrar o funcionamento interno de uma linguagem, desde a análise do código-fonte (`.easy`) até a sua execução.
 
 ### Principais Fases de Processamento
 
-[cite_start]O EasyLanguage segue o fluxo de processamento completo de um compilador[cite: 76]:
+O EasyLanguage segue o fluxo de processamento completo de um compilador:
 
-1.  [cite_start]**Análise Léxica:** Quebra o código-fonte em tokens (via `EasyLanguageLexer`)[cite: 40].
-2.  [cite_start]**Análise Sintática:** Constrói a **Árvore Sintática (Parse Tree)** a partir da gramática[cite: 44, 86].
-3.  [cite_start]**Análise Semântica:** Verifica tipos, escopo e coerência das operações[cite: 47, 349].
-4.  [cite_start]**Geração de Código Intermediário:** Cria uma lista de objetos `AbstractCommand`s[cite: 50, 88].
-5.  [cite_start]**Execução/Geração de Código Alvo:** Executa o programa (`EasyProgram`) ou gera código para linguagens como Java[cite: 53, 362].
+1.  **Análise Léxica:** Quebra o código-fonte em tokens (via `EasyLanguageLexer`).
+2.  **Análise Sintática:** Constrói a **Árvore Sintática (Parse Tree)** a partir da gramática.
+3.  **Análise Semântica:** Verifica tipos, escopo e coerência das operações.
+4.  **Geração de Código Intermediário:** Cria uma lista de objetos `AbstractCommand`s.
+5.  **Execução/Geração de Código Alvo:** Executa o programa (`EasyProgram`) ou gera código para linguagens como Java.
 
 ---
 
 ## 🧠 Recursos da Linguagem
 
-[cite_start]O EasyLanguage implementa um conjunto expandido de funcionalidades, conforme a especificação do projeto[cite: 283].
+O EasyLanguage implementa um conjunto expandido de funcionalidades, conforme a especificação do projeto.
 
 ### Tipos de Dados Suportados
 
@@ -45,25 +45,25 @@
 
 A gramática (`EasyLanguage.g4`) implementa as seguintes estruturas, demonstrando controle de fluxo complexo:
 
-* [cite_start]**Decisão Condicional:** `se (condicao) entao { comandos } senao { comandos }`[cite: 180].
-* [cite_start]**Laço Enquanto (While):** `enquanto (condicao) faca { comandos }`[cite: 317, 437].
-* [cite_start]**Laço Para (For):** `para ID = inicio ate fim passo incremento faca { comandos }`[cite: 319, 438].
+* **Decisão Condicional:** `se (condicao) entao { comandos } senao { comandos }`.
+* **Laço Enquanto (While):** `enquanto (condicao) faca { comandos }`.
+* **Laço Para (For):** `para ID = inicio ate fim passo incremento faca { comandos }`.
 
 ### Funções e Modularização
 
-[cite_start]O suporte a subprogramas permite modularização e gerenciamento de escopo[cite: 335]:
+O suporte a subprogramas permite modularização e gerenciamento de escopo:
 
-* [cite_start]**Funções com Retorno:** Implementação com palavra-chave `retorna` e tipo de retorno explícito[cite: 341, 445].
-* [cite_start]**Procedimentos:** Funções sem valor de retorno (`vazio`)[cite: 344, 446].
-* [cite_start]**Sistema de Chamadas:** Gerenciamento de pilha de chamadas e escopo de variáveis locais para funções[cite: 347, 447].
+* **Funções com Retorno:** Implementação com palavra-chave `retorna` e tipo de retorno explícito.
+* **Procedimentos:** Funções sem valor de retorno (`vazio`).
+* **Sistema de Chamadas:** Gerenciamento de pilha de chamadas e escopo de variáveis locais para funções.
 
 ### Análise Semântica Avançada (Extensão)
 
-[cite_start]O projeto inclui funcionalidades críticas de análise semântica[cite: 456]:
+O projeto inclui funcionalidades críticas de análise semântica:
 
-* [cite_start]**Verificação de Tipos:** Validação rigorosa de compatibilidade em expressões e atribuições[cite: 351, 457].
-* [cite_start]**Verificação de Escopo:** Mecanismo para validar a acessibilidade e resolver conflitos de nomes (essencial para funções)[cite: 354, 457].
-* [cite_start]**Operadores Lógicos:** Suporte aos operadores `e`, `ou`, `nao` para expressões booleanas complexas[cite: 331, 441].
+* **Verificação de Tipos:** Validação de compatibilidade em expressões e atribuições.
+* **Verificação de Escopo:** Mecanismo para validar a acessibilidade e resolver conflitos de nomes (essencial para funções).
+* **Operadores Lógicos:** Suporte aos operadores `e`, `ou`, `nao` para expressões booleanas complexas.
 
 ---
 
@@ -71,22 +71,22 @@ A gramática (`EasyLanguage.g4`) implementa as seguintes estruturas, demonstrand
 
 ### Estruturas de Dados Internas
 
-[cite_start]Estruturas fundamentais que dão suporte ao compilador[cite: 14, 462]:
+Estruturas fundamentais que dão suporte ao compilador:
 
-* [cite_start]**`EasySymbolTable`**: Implementada como um `HashMap`, armazena variáveis, constantes e funções[cite: 16, 163].
-* [cite_start]**Lista de Comandos**: `ArrayList` de objetos que formam a representação intermediária para execução[cite: 19, 89].
-* [cite_start]**Pilha de Escopos**: Gerenciamento hierárquico de variáveis para suportar funções[cite: 379, 463].
-* [cite_start]**Árvore Sintática Abstrata (AST)**: Representação em árvore para facilitar análises e otimizações[cite: 381, 464].
+* **`EasySymbolTable`**: Implementada como um `HashMap`, armazena variáveis, constantes e funções.
+* **Lista de Comandos**: `ArrayList` de objetos que formam a representação intermediária para execução.
+* **Pilha de Escopos**: Gerenciamento hierárquico de variáveis para suportar funções.
+* **Árvore Sintática Abstrata (AST)**: Representação em árvore para facilitar análises e otimizações.
 
 ### Geração de Código
 
-[cite_start]O projeto vai além da interpretação, implementando um *backend* que traduz o código EasyLanguage para o código alvo[cite: 360, 459]:
+O projeto vai além da interpretação, implementando um *backend* que traduz o código EasyLanguage para o código alvo:
 
 `Código-Fonte EasyLanguage → Parser/Semântica → Lista de Comandos → Gerador Java`
 
 ### Definição de Gramática (BNF/EBNF)
 
-[cite_start]A gramática é definida no arquivo `EasyLanguage.g4` (ANTLR) e segue regras livres de contexto[cite: 28].
+A gramática é definida no arquivo `EasyLanguage.g4` (ANTLR) e segue regras livres de contexto.
 
 ```BNF
 programa: 'programa' ID (declaracao)* 'inicio' bloco 'fim;'
@@ -99,6 +99,7 @@ cmdrepeticao: 'enquanto' '(' expr_logica ')' 'faca' '{' (cmd)* '}'
 cmdfor: 'para' ID '=' expr 'ate' expr ('passo' expr)? 'faca' '{' (cmd)* '}'
 
 declarafuncao: (tipo | 'vazio') 'funcao' ID '(' (parametros)? ')' 'inicio' bloco 'fim' ';'
+```
 
 ## 🧰 Tecnologias Utilizadas
 
