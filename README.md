@@ -194,7 +194,7 @@ fim;
 
 ## 👨‍💻 Autores
 
-Projeto desenvolvido por estudantes da**Faculdade Engenheiro Salvador Arena**
+Projeto desenvolvido por estudantes da **Faculdade Engenheiro Salvador Arena**
 
 - Adriana Kaori Kakazu - RA: 082220004
 - Beatriz dos Santos Buglio - RA: 082220028
