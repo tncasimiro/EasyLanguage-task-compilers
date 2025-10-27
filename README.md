@@ -134,4 +134,8 @@ Acesse a IDE em [http://localhost:8080](http://localhost:8080/)
 👨‍💻 Autores
 -------------
 
-Projeto desenvolvido por estudantes da**Faculdade Engenheiro Salvador Arena**➡️ [Lista completa de colaboradores](https://chatgpt.com/c/AUTHORS)
+Projeto desenvolvido por estudantes da**Faculdade Engenheiro Salvador Arena**
+
+- Adriana Kaori Kakazu - RA: 082220004
+- Beatriz dos Santos Buglio - RA: 082220028
+- Tainara do Nascimento Casimiro - RA: 082220011
