@@ -55,20 +55,19 @@ O **EasyLanguage Compiler** é um ambiente para experimentação prática de com
     *   Suporte a funções e procedimentos com parâmetros
         
 
-        
 
 ⚙️ Estrutura Técnica
 --------------------
 
 ### Arquitetura do Compilador
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Código-Fonte → Análise Léxica → Análise Sintática → Análise Semântica → Geração de Código   `
+`   Código-Fonte → Análise Léxica → Análise Sintática → Análise Semântica → Geração de Código   `
 
 ### Definição de Gramática
 
 A linguagem é especificada em **gramática livre de contexto**, com palavras-chave em português:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   programa → 'programa' ID ';' declaracoes 'inicio' comandos 'fimprograma'  declaracao → 'var' ID ':' tipo ';' | funcao | procedimento  tipo → 'inteiro' | 'real' | 'logico' | 'texto'  comando → atribuicao | condicional | repeticao | chamada_funcao   `
+`   programa → 'programa' ID ';' declaracoes 'inicio' comandos 'fimprograma'  declaracao → 'var' ID ':' tipo ';' | funcao | procedimento  tipo → 'inteiro' | 'real' | 'logico' | 'texto'  comando → atribuicao | condicional | repeticao | chamada_funcao   `
 
 ### Estrutura do Projeto
 
@@ -104,11 +103,11 @@ CategoriaFerramenta**Backend**Spring Boot 3.x (Java 17+)**Frontend**Thymeleaf + 
 
 ### Instalação
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone git@github.com:guileermio/Compilador_EasyLanguage.git  cd Compilador_EasyLanguage  mvn clean compile   `
+`   git clone git@github.com:guileermio/Compilador_EasyLanguage.git  cd Compilador_EasyLanguage  mvn clean compile   `
 
 ### Execução
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   mvn spring-boot:run   `
+`   mvn spring-boot:run   `
 
 Acesse a IDE em [http://localhost:8080](http://localhost:8080/)
 
@@ -117,19 +116,19 @@ Acesse a IDE em [http://localhost:8080](http://localhost:8080/)
 
 ### 📝 Programa Básico
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   programa HelloWorld;  inicio      escrever("Olá, Mundo!");  fimprograma   `
+`   programa HelloWorld;  inicio      escrever("Olá, Mundo!");  fimprograma   `
 
 ### 🔁 Estruturas de Controle
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   programa LoopExample;  inicio      var i: inteiro;      var soma: inteiro;      soma = 0;      para i = 1 ate 10 faca          soma = soma + i;      fimpara      escrever("Soma de 1 a 10: ", soma);  fimprograma   `
+`   programa LoopExample;  inicio      var i: inteiro;      var soma: inteiro;      soma = 0;      para i = 1 ate 10 faca          soma = soma + i;      fimpara      escrever("Soma de 1 a 10: ", soma);  fimprograma   `
 
 ### 🔢 Função Recursiva
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   funcao fatorial(n: inteiro): inteiro  inicio      se n <= 1 entao          retornar 1;      senao          retornar n * fatorial(n - 1);      fimse  fim   `
+`   funcao fatorial(n: inteiro): inteiro  inicio      se n <= 1 entao          retornar 1;      senao          retornar n * fatorial(n - 1);      fimse  fim   `
 
 ### 📦 Manipulação de Vetores
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   programa ArrayExample;  inicio      var numeros: vetor[10] de inteiro;      var i: inteiro;      var maior: inteiro;      para i = 0 ate 9 faca          ler(numeros[i]);      fimpara      maior = numeros[0];      para i = 1 ate 9 faca          se numeros[i] > maior entao              maior = numeros[i];          fimse      fimpara      escrever("Maior valor: ", maior);  fimprograma   `
+`   programa ArrayExample;  inicio      var numeros: vetor[10] de inteiro;      var i: inteiro;      var maior: inteiro;      para i = 0 ate 9 faca          ler(numeros[i]);      fimpara      maior = numeros[0];      para i = 1 ate 9 faca          se numeros[i] > maior entao              maior = numeros[i];          fimse      fimpara      escrever("Maior valor: ", maior);  fimprograma   `
 
 
 👨‍💻 Autores
