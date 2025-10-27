@@ -119,8 +119,8 @@ declarafuncao: (tipo | 'vazio') 'funcao' ID '(' (parametros)? ')' 'inicio' bloco
 ### Instalação
 
 ```bash
-git clone git@github.com:guileermio/Compilador_EasyLanguage.git
-cd Compilador_EasyLanguage
+git clone https://github.com/tncasimiro/EasyLanguage-task-compilers.git
+cd EasyLanguage-task-compilers
 mvn clean compile
 ```
 
