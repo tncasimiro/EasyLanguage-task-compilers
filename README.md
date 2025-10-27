@@ -35,11 +35,11 @@ O EasyLanguage implementa um conjunto expandido de funcionalidades, conforme a e
 
 ### Tipos de Dados Suportados
 
-[cite_start]A linguagem suporta **tipagem estática** e inclui os seguintes tipos[cite: 225]:
+A linguagem suporta **tipagem estática** e inclui os seguintes tipos:
 
 * **Numéricos:** `inteiro`, `real`
 * **Texto:** `texto`, `caractere`
-* [cite_start]**Lógico (Booleano):** `logico` (valores: `verdadeiro` e `falso`) [cite: 440]
+* **Lógico (Booleano):** `logico` (valores: `verdadeiro` e `falso`)
 
 ### Estruturas de Controle Expandidas
 
